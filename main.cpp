@@ -34,7 +34,7 @@ int main() {
       std::cout<<"Вы находитесь здесь: ";
       print_elem(aa[i],current);
       std::cout<<"Введите команду: ";
-      std::cin>>std::setw(254)>>cmd;
+      std::cin>>std::setw(255)>>cmd;
       if(!make_move_err(cmd,asizes[i],current,over)){
         std::cout<<"Ок\n";
       }
@@ -43,7 +43,7 @@ int main() {
     if(i<numarr-1){
        while(1){
          std::cout<<"Следующая пирамида?(да/нет): ";
-         std::cin>>std::setw(254)>>cmd;
+         std::cin>>std::setw(255)>>cmd;
          if(cmd=="нет"){
            next_pyr = false;
            break;
